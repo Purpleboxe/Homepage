@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    --gray: #4C5B61;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', 'sans-serif';
+}
+
+button {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Header */
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.about-image {
+    background-image: url(./Images/pexels-jean-van-der-meulen-1823704.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 500px;
+    width: 400px;
+    text-align: center;
+}
+
+.about-text {
+    transform: translateY(20%);
+    max-width: 500px;
+    height: 300px;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(170, 170, 170);
+}
+
+.icons {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.icons > * {
+    font-size: 25px;
+}
+
+.background {
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    top: 0px;
+    filter: drop-shadow(0px 1px 5px var(--gray));
+    z-index: -1;
+}
+
+.background div {
+    height: 100%;
+    width: 100%;
+    background-color: var(--gray);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+}
+
+.smaller {
+    display: none;
+}
+
+.credit {
+    margin-top: 90%;
+}
+
+.credit a {
+    color: rgb(255, 255, 255);
+}
+
+/* Screen sizes */
+
+@media (max-width: 1048px) {
+    .about {
+        margin-top: 0px;
+    }
+
+    .text-wrapper {
+        min-height: 350px;
+        width: 300px;
+        float: left;
+    }
+
+    .smaller {
+        display: block;
+        position: absolute;
+        font-size: 10px;
+        min-height: 400px;
+        width: 300px;
+        bottom: 200px;
+        left: 0px;
+        z-index: 1;
+    }
+
+    .bigger {
+        display: none;
+    }
+
+    .about-text {
+        height: 500px;
+    }
+}
