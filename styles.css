@@ -115,3 +115,43 @@ button {
         height: 500px;
     }
 }
+
+@media (max-width: 500px) {
+    .text-wrapper {
+        min-height: 350px;
+        width: 100%;
+        float: left;
+    }
+
+    .smaller {
+        left: 50%;
+        transform: translateX(-50%);
+        min-height: 450px;
+        width: 350px;
+        top: 0px;
+    }
+
+    .about-text {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .about-text h2 {
+        text-align: center;
+    }
+
+    .icons {
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-wrapper {
+        min-height: 500px;
+    }
+
+    .icons {
+        bottom: 0px;
+        right: 0px;
+    }
+}
