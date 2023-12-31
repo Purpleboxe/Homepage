@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
 :root {
     --gray: #4C5B61;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('Resources/RobotoMono-VariableFont_wght.ttf');
 }
 
 body {
@@ -31,7 +34,7 @@ header {
 }
 
 .about-image {
-    background-image: url(./Images/pexels-jean-van-der-meulen-1823704.jpg);
+    background-image: url(./Resources/pexels-jean-van-der-meulen-1823704.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
