@@ -161,6 +161,8 @@ main div {
 /* Footer */
 
 footer {
+    display: flex;
+    justify-content: center;
     width: 100%;
     min-height: 500px;
     background-color: var(--gray);
@@ -191,7 +193,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     width: 600px;
-    min-height: 400px;
+    height: 400px;
 }
 
 .contact-image .credit {
@@ -309,6 +311,10 @@ footer {
     }
 
     /* Footer */
+
+    footer {
+        display: block;
+    }
 
     .personal img {
         display: none;
